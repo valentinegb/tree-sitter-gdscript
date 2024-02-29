@@ -1,0 +1,62 @@
+=====================
+Function definitions
+=====================
+
+func my_int_function() -> int:
+	return 0
+
+func my_function(a: int, b: String):
+	pass
+
+func my_function(a = 42, b = "string"):
+	pass
+
+func my_function(a: int = 42, b: String = "string"):
+	pass
+
+func my_function(int_arg := 42, String_arg := "string"):
+	pass
+
+---
+
+(source_file
+  (function_definition
+    (identifier)
+    (parameter_list)
+    (block
+      (return_statement
+        (number))))
+  (function_definition
+    (identifier)
+    (parameter_list
+      (identifier)
+      (identifier))
+    (block
+      (pass_statement)))
+  (function_definition
+    (identifier)
+    (parameter_list
+      (identifier)
+      (number)
+      (identifier)
+      (string))
+    (block
+      (pass_statement)))
+  (function_definition
+    (identifier)
+    (parameter_list
+      (identifier)
+      (number)
+      (identifier)
+      (string))
+    (block
+      (pass_statement)))
+  (function_definition
+    (identifier)
+    (parameter_list
+      (identifier)
+      (number)
+      (identifier)
+      (string))
+    (block
+      (pass_statement))))
